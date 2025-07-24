@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #fffaf0;
+  background-color: #e9dfcc;
 }
 
 /* CONTAINER PRINCIPAL */
@@ -23,7 +23,7 @@ body {
 
 .botao-destaque {
   padding: 0.8rem 1.5rem;
-  background-color: #ff6600;
+  background-color: #e2ddd9;
   color: white;
   border-radius: 8px;
   font-weight: bold;
@@ -126,10 +126,12 @@ body {
 
 
 .produto img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  border-radius: 6px;
+  object-fit: contain; /* mostra a imagem inteira */
+  border-radius: 8px;
 }
+
 .apresentacao-container {
   display: flex;
   justify-content: flex-start;
@@ -153,33 +155,29 @@ body {
 }
 .grid-produtos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(4, 1fr); /* 4 por linha */
+  gap: 1rem;
+  padding: 1rem;
   justify-items: center;
-  margin: 20px 0;
 }
 
 .produto {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 10px;
+  width: 100%;
+  max-width: 160px; /* Tamanho controlado */
+  font-size: 0.9rem;
   text-align: center;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
-}
-
-.produto:hover {
-  transform: scale(1.03);
 }
 
 .produto img {
   width: 100%;
-  max-width: 110px; /* Deixa a imagem menor */
   height: auto;
-  margin-bottom: 10px;
-  border-radius: 6px;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
 }
+
+
 
 .produto h3 {
   font-size: 14px;
@@ -201,3 +199,44 @@ body {
   text-decoration: none;
   font-size: 13px;
 }
+.topo-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.icon-rede img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon-rede img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .topo-links {
+    gap: 1.5rem;
+  }
+
+  .icon-rede img {
+    width: 48px;
+    height: 48px;
+  }
+}
+@media (max-width: 768px) {
+  .grid-produtos {
+    grid-template-columns: repeat(2, 1fr); /* 2 por linha no celular */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-produtos {
+    grid-template-columns: 1fr; /* 1 por linha no celular pequeno */
+  }
+}
+
