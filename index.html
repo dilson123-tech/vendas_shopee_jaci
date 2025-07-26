@@ -9,7 +9,12 @@
   <link rel="stylesheet" href="css/style.css">
 
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <!-- NO HEAD -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- ANTES DO </body> -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   <style>
     
   </style>
@@ -61,18 +66,18 @@
     </div>
   </div>
 
-<section class="redes-jaci">
+  <section class="redes-jaci">
   <p>🛒 <strong>Ver Coleção Completa da Jaci</strong></p>
 
-  <a href="https://www.instagram.com/@Jaci_dicas-instagram" target="_blank">
-  <img src="img/instagram.png" alt="Instagram" width="80">
-</a>
+  <a href="https://www.instagram.com/Jaci_dicas" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+  </a>
 
-<a href="https://www.tiktok.com/@jaci.pereira" target="_blank">
-  <img src="img/tiktok.png" alt="TikTok" width="80">
-</a>
-
+  <a href="https://www.tiktok.com/@jaci.pereira65" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" />
+  </a>
 </section>
+
 
 
 
@@ -80,7 +85,7 @@
 
 
 <video controls class="video-apresentacao">
-  <source src="seuvideo.mp4" type="video/mp4">
+  <source src="videos/videoplayback.mp4" type="video/mp4">
   Seu navegador não suporta o vídeo.
 </video>
 
@@ -97,7 +102,7 @@
 </section>
 
   </div>
-  <h2>Produtos em Destaque</h2>
+  
 <section id="moda" class="fullwidth">
 
   <div class="secao-produtos">
@@ -141,11 +146,11 @@
   </div>
    <div class="produto">
     <a href="img/WhatsApp Image 2025-07-24 at 13.29.55.jpeg" target="_blank">
-      <img src="img/WhatsApp Image 2025-07-24 at 13.29.55.jpeg" alt="Relogio masculino">
+      <img src="img/full color.jpeg" alt="camera full collor">
     </a>
-    <h3>Relógio masculino</h3>
-    <p>R$ 100,00</p>
-    <a href="https://s.shopee.com.br/1qRIvOmJrO" target="_blank" class="botao">
+    <h3>Camera fool collor </h3>
+    <p>R$ 71,94</p>
+    <a href="https://s.shopee.com.br/5VKbUqfd3x" target="_blank" class="botao">
   Ver na Shopee
 </a>
 
@@ -484,6 +489,13 @@
     </div>
     </div>
   </section>
+<section class="galeria-vip">
+  <h2 class="titulo-vip">🌟 Galeria VIP da Jaci 🌟</h2>
+  
+  <div class="container-vip">
+    <!-- Seus cards VIP vão aqui dentro -->
+  </div>
+</section>
 
   
 <section class="galeria-vip-section">
@@ -501,12 +513,12 @@
 
   <!-- GALERIA 2 -->
   <div class="galeria-vip">
-    <img src="img/produtoX.jpg" class="imagem-destaque" alt="Produto principal 2">
+    <img src="img/full color.jpeg" class="imagem-destaque" alt="Produto principal 2">
 
     <div class="imagens-pequenas">
-      <img src="img/produtoX_opcao1.jpg" alt="Miniatura 2.1">
-      <img src="img/produtoX_opcao2.jpg" alt="Miniatura 2.2">
-      <img src="img/produtoX_opcao3.jpg" alt="Miniatura 2.3">
+      <img src="img/full color.jpeg" alt="Miniatura 2.1">
+      <img src="img/camera mini 1.jpeg" alt="Miniatura 2.2">
+      <img src="img/camera mini 2.jpeg" alt="Miniatura 2.3">
     </div>
   </div>
 
@@ -556,7 +568,7 @@
 
 
    
-
+@jaci_dicas-instagram
   </div>
 
 </section>
@@ -571,8 +583,14 @@
 
 <!-- FOOTER -->
 <footer>
+  <p>📲 Siga a Jaci nas redes sociais:</p>
+  <p>
+    <a href="https://www.instagram.com/achadinhosdajaci" target="_blank">Instagram 📸</a> |
+    <a href="https://www.tiktok.com/@achadinhosdajaci" target="_blank">TikTok 🎵</a>
+  </p>
   <p>© 2025 Achadinhos da Jaci. Todos os direitos reservados.</p>
 </footer>
+
 
 <!-- APENAS 1 SCRIPT PARA TROCAR A IMAGEM CORRETAMENTE -->
 <script>
@@ -619,6 +637,17 @@
 
 <!-- Coloque isso bem aqui, antes de fechar o body -->
 </script>
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    direction: "horizontal",
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  });
+</script>
+
 </body>
   
 </html>

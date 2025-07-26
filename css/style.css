@@ -673,11 +673,27 @@ main {
 }
 
 .galeria-vip {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 400px;
+  text-align: center;
+  padding: 60px 20px; /* espaço superior/inferior e lateral */
+  background-color: #fff;
 }
+
+.titulo-vip {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container-vip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px; /* espaço entre os cards */
+  padding: 0 20px;
+}
+
 
 .imagem-destaque {
   width: 100%;
@@ -722,4 +738,105 @@ main {
 
 .imagem-destaque.fade-out {
   opacity: 0;
+}
+.redes-jaci {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.redes-jaci img {
+  width: 50px;
+  margin: 0 10px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.redes-jaci img:hover {
+  transform: scale(1.2);
+}
+.achadinhos-moda {
+  background-color: #a29f9b;
+  padding: 40px 10px;
+  text-align: center;
+}
+
+.achadinhos-moda h2 {
+  font-size: 26px;
+  color: #4d4a4a;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.produtos-moda {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.secao-produtos h2 {
+  margin: 10px 0;           /* Reduz altura vertical total */
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+
+
+
+.secao-produtos {
+  background-color: #e8d9c9; /* ou a cor da faixa */
+  padding: 10px 10px;       /* Altura reduzida */
+  margin-bottom: 10px;      /* Aproxima das imagens */
+  text-align: center;
+}
+
+
+
+.grid-produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+/* ISSO aqui tá empurrando tudo pra baixo */
+}
+
+
+.produto {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  width: 220px;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.produto img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.produto:hover {
+  transform: scale(1.03);
+}
+
+.btn-shopee {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #ff5722;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.grid-produtos {
+  padding-top: 0;
+  margin-top: 0;
 }
