@@ -19,6 +19,6 @@ const swiper = new Swiper(".mySwiper", {
   },
 });
 
-function trocarImagem(src) {
-  document.getElementById("imagem-principal").src = src;
-}
+//function trocarImagem(src) {
+  //document.getElementById("imagem-principal").src = src;
+//}
