@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("Achadinhos da Jaci está no ar!");
+  console.log("Dils Ofertas está no ar!");
 });
 
 function ampliarImagem(img) {
